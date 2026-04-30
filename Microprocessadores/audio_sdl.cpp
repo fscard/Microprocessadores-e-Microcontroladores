@@ -16,6 +16,16 @@ O programa:
 5) espera o termino da reproducao;
 6) libera os recursos utilizados.
 
+Instalar bibliotecas:
+sudo apt-get update
+sudo apt-get install libsdl2-dev libsdl2-mixer-dev
+
+Como compilar:
+g++ -o audio_sdl audio_sdl.cpp -I/usr/include/SDL2 -lSDL2 -lSDL2_mixer
+
+Executar:
+./audio_sdl
+
 Observacao:
 Em Linux nativo, este exemplo costuma funcionar bem quando as
 bibliotecas e o dispositivo de audio estao corretamente configurados.
